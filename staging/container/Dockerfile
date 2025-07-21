@@ -3,6 +3,8 @@
 # ==============================================================================
 FROM python:3.7-slim AS builder
 
+LABEL org.opencontainers.image.source=https://github.com/pgx-ml-lab/2025-STAGE-workshop-TWAS
+
 # Install build tools and R
 RUN apt update && apt install -y \
     software-properties-common \
