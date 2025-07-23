@@ -69,10 +69,6 @@ ENV PATH="/workshop/software/MetaXcan/software:$PATH"
 RUN wget https://github.com/gusevlab/fusion_twas/archive/master.zip && \
     unzip master.zip && rm master.zip && mv fusion_twas-master /workshop/software/FUSION
 
-# Copy workshop materials
-COPY data /workshop/data
-COPY utilities /workshop/utilities
-
 # Configure jupyterlab
 RUN pip install jupyterlab bash_kernel
 
@@ -82,6 +78,10 @@ RUN pip install jupyterlab-spreadsheet
 
 RUN Rscript -e "install.packages('IRkernel'); IRkernel::installspec()"
 RUN Rscript -e "install.packages(c('ggplot2', 'dplyr', 'scales'))"
+
+# Copy workshop materials
+COPY data /workshop/data
+COPY utilities /workshop/utilities
 
 EXPOSE 8888
 
