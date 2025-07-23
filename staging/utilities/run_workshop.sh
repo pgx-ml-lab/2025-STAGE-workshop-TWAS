@@ -7,7 +7,7 @@ function get_data() {
         xargs -n 1 curl -LO
 
     for file in *.tar* *.tgz; do
-        [ -f "$file" ] && tar -xaf "$file" --keep-old-files && rm "$file"
+        [ -f "$file" ] && tar -xaf "$file" --keep-old-files ; rm "$file"
     done
 }
 
