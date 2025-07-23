@@ -45,7 +45,7 @@ FROM python:3.7-slim AS final
 # Install runtime system packages including R
 RUN apt update && apt install -y \
     git r-base sqlite3 \
-    wget unzip tree \
+    wget unzip tree jq curl \
  && apt clean && rm -rf /var/lib/apt/lists/*
 
 # Copy virtual environment from builder
@@ -71,6 +71,7 @@ RUN wget https://github.com/gusevlab/fusion_twas/archive/master.zip && \
 
 # Copy workshop materials
 COPY data /workshop/data
+COPY utilities /workshop/utilities
 
 # Configure jupyterlab
 RUN pip install jupyterlab bash_kernel
@@ -80,6 +81,7 @@ RUN python -m bash_kernel.install
 RUN pip install jupyterlab-spreadsheet
 
 RUN Rscript -e "install.packages('IRkernel'); IRkernel::installspec()"
+RUN Rscript -e "install.packages(c('ggplot2', 'dplyr', 'scales'))"
 
 EXPOSE 8888
 
@@ -87,4 +89,4 @@ WORKDIR /workshop
 
 ENV SHELL=/bin/bash
 
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+CMD ["/workshop/utilities/run_workshop.sh"]
