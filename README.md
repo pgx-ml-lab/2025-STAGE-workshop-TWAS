@@ -16,8 +16,8 @@ You can find the [Docker Desktop](https://www.docker.com/) application for your 
 
 We prepared launcher scripts to start the environment.
 
-- [Windows Launcher](./run_workshop_environment_windows.bat)
-- [macOS / Linux Launcher](./run_workshop_environment_macOS_linux.sh)
+- [Windows Launcher](https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_windows.bat)
+- [macOS / Linux Launcher](https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_macOS_linux.sh)
 
 You can download and execute these scripts to launche the environment. In macOS, you can execute the script by drag and dropping the file into a Terminal window, or by right clicking it and using "Open with -> Terminal".
 
