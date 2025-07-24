@@ -2,12 +2,19 @@
 
 function get_data() {
     # Get the assets from the latest release and untar them.
-    curl -s https://api.github.com/repos/pgx-ml-lab/2025-STAGE-workshop-TWAS/releases |
-        jq -r '.[0].assets[].browser_download_url' |
-        xargs -n 1 curl -LO
+    release_data=$(curl -s https://api.github.com/repos/pgx-ml-lab/2025-STAGE-workshop-TWAS/releases)
+    
+    downloaded_files=$(echo "$release_data" | jq -r '.[0].assets[].browser_download_url' | xargs -n 1 basename)
+    
+    echo "$release_data" | jq -r '.[0].assets[].browser_download_url' | xargs -n 1 curl -LO
 
     for file in *.tar* *.tgz; do
-        [ -f "$file" ] && tar -xaf "$file" --keep-old-files ; rm "$file"
+        [ -f "$file" ] && tar -xaf "$file" --keep-old-files
+    done
+    
+    # Clean up only the downloaded tar files
+    for file in $downloaded_files; do
+        [ -f "$file" ] && rm -f "$file"
     done
 }
 
