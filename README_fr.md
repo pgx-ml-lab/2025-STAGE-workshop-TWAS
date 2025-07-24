@@ -1,3 +1,5 @@
+*[English](README.md)*
+
 # Introduction
 
 Ce répertoire contient le matériel d'atelier pour le Thème 2 de l'[Atelier sur la génétique statistique et l'épidémiologie génétique STAGE-Québec](https://www.crmath.ca/en/activities/#/type/activity/id/4039).
