@@ -1,6 +1,6 @@
-# Introduction
-
 *[Français](README_fr.md)*
+
+# Introduction
 
 This repository contains workshop materials for Theme 2 of the [Workshop on Statistical Genetics and Genetic Epidemiology STAGE-Quebec](https://www.crmath.ca/en/activities/#/type/activity/id/4039).
 
