@@ -24,10 +24,15 @@ Nous avons préparé des scripts de lancement pour démarrer l'environnement :
 **Exigence de stockage :** ~5 Go d'espace disque disponible
 
 **Instructions :**
-1. Téléchargez le script de lancement approprié (clic droit → « Enregistrer le lien sous »)
-2. Exécutez le script :
-   - **macOS :** Glissez-déposez le fichier dans le Terminal, ou clic droit → « Ouvrir avec le Terminal »
-   - **Windows :** Double-cliquez sur le fichier `.bat` ou lancez-le depuis l'Invite de commande
+
+### macOS / Linux
+Ouvrez le Terminal et exécutez :
+```bash
+curl -fsSL https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_macOS_linux.sh | sh
+```
+
+### Windows
+Téléchargez et double-cliquez : [Lanceur Windows](https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_windows.bat)
 
 ### Que fait ce lanceur ?
 

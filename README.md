@@ -24,10 +24,15 @@ We have prepared launcher scripts to start the environment:
 **Storage requirement:** ~5GB of available disk space
 
 **Instructions:**
-1. Download the appropriate launcher script (right-click → "Save Link As")
-2. Execute the script:
-   - **macOS:** Drag and drop the file into Terminal, or right-click → "Open with Terminal"
-   - **Windows:** Double-click the `.bat` file or run from Command Prompt
+
+### macOS / Linux
+Open Terminal and run:
+```bash
+curl -fsSL https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_macOS_linux.sh | sh
+```
+
+### Windows
+Download and double-click: [Windows Launcher](https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_windows.bat)
 
 ### What Does the Launcher Do?
 
