@@ -2,7 +2,7 @@
 
 # Introduction
 
-This repository contains workshop materials for Theme 2 of the [Workshop on Statistical Genetics and Genetic Epidemiology STAGE-Quebec](https://www.crmath.ca/en/activities/#/type/activity/id/4039).
+This repository contains workshop materials for Theme 2 of the <a href="https://www.crmath.ca/en/activities/#/type/activity/id/4039" target="_blank">Workshop on Statistical Genetics and Genetic Epidemiology STAGE-Quebec</a>.
 
 Theme 2 focuses on **Molecular Phenotypes in Genetic Epidemiology** and will guide you through conducting and interpreting transcriptome-wide association studies (TWAS) using S-PrediXcan and TWAS/FUSION.
 
@@ -12,14 +12,14 @@ Theme 2 focuses on **Molecular Phenotypes in Genetic Epidemiology** and will gui
 
 Installing S-PrediXcan and FUSION and locating all required files can be tedious. To streamline the workshop, we have prepared a containerized environment with pre-installed software and pre-processed data. 
 
-**Prerequisites:** Install [Docker Desktop](https://www.docker.com/) for your operating system.
+**Prerequisites:** Install <a href="https://www.docker.com/" target="_blank">Docker Desktop</a> for your operating system.
 
 ## Running the Environment
 
 We have prepared launcher scripts to start the environment:
 
-- [Windows Launcher](https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_windows.bat)
-- [macOS / Linux Launcher](https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_macOS_linux.sh)
+- <a href="https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_windows.bat" target="_blank">Windows Launcher</a>
+- <a href="https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_macOS_linux.sh" target="_blank">macOS / Linux Launcher</a>
 
 **Storage requirement:** ~5GB of available disk space
 
@@ -32,7 +32,7 @@ curl -fsSL https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS
 ```
 
 ### Windows
-Download and double-click: [Windows Launcher](https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_windows.bat)
+Download and double-click: <a href="https://raw.githubusercontent.com/pgx-ml-lab/2025-STAGE-workshop-TWAS/refs/heads/main/run_workshop_environment_windows.bat" target="_blank">Windows Launcher</a>
 
 ### What Does the Launcher Do?
 
@@ -44,10 +44,12 @@ The launcher creates a folder in your home directory called `STAGE2025_workshop_
 
 The folder is automatically populated with workshop materials (Jupyter notebooks) that you can access from the environment.
 
-### Accessing the Computing Environment
+### Accessing the Computing Environment and Tutorials
 
-**While the launcher script is running, access the workshop environment at:**
-[http://127.0.0.1:8888/lab](http://127.0.0.1:8888/lab)
+**When the launcher script has completed, access the workshop environment at:**
+<a href="http://127.0.0.1:8888/lab" target="_blank">http://127.0.0.1:8888/lab</a>
+
+**To access the tutorials**, use the left pane to browse through files in the "local" folder. The files with the _.ipynb_ extension contain the interactive tutorials. Double-click on the first notebook (_1a-S-PrediXcan-tutorial_and_exploration.ipynb_) and you will be ready to start!
 
 ## What's Included?
 
@@ -58,18 +60,18 @@ The computing environment contains:
 - Utility functions for data visualization (`/workshop/utilities`)
 
 ### Pre-installed Software
-- **[MetaXcan package](https://github.com/hakyimlab/MetaXcan)**
-  - Model weights from [PredictDB](https://predictdb.hakyimlab.org/)
+- **<a href="https://github.com/hakyimlab/MetaXcan" target="_blank">MetaXcan package</a>**
+  - Model weights from <a href="https://predictdb.hakyimlab.org/" target="_blank">PredictDB</a>
   - Elastic net (`en`) models for 7 GTEx tissues
-  - [Inflation-corrected models](https://predictdb.hakyimlab.org/post/2024/11/11/twas-inflation-corrected-models/) for polygenicity adjustment
+  - <a href="https://predictdb.hakyimlab.org/post/2024/11/11/twas-inflation-corrected-models/" target="_blank">Inflation-corrected models</a> for polygenicity adjustment
 
-- **R [FUSION scripts](http://gusevlab.org/projects/fusion/)**
+- **R <a href="http://gusevlab.org/projects/fusion/" target="_blank">FUSION scripts</a>**
   - Model weights for GTEx pancreas and Young Finns Study whole blood
   - LD reference genotypes from 1000 Genomes data
 
 ### Pre-processed Data
 - **Type 2 Diabetes GWAS Summary Statistics**
-  - Source: [DIAGRAM/DIAMANTE/T2DGGI consortium](https://diagram-consortium.org/index.html)
-  - [European ancestry data](https://www.nature.com/articles/s41588-022-01058-3)
+  - Source: <a href="https://diagram-consortium.org/index.html" target="_blank">DIAGRAM/DIAMANTE/T2DGGI consortium</a>
+  - <a href="https://www.nature.com/articles/s41588-022-01058-3" target="_blank">European ancestry data</a>
   - Lifted over from GRCh37 to GRCh38
   - Harmonized with TWAS model variants
