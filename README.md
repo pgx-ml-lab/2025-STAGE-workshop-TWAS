@@ -75,3 +75,7 @@ The computing environment contains:
   - <a href="https://www.nature.com/articles/s41588-022-01058-3" target="_blank">European ancestry data</a>
   - Lifted over from GRCh37 to GRCh38
   - Harmonized with TWAS model variants
+
+### Access notebooks without Docker
+
+A non-interactive version of the materials can be found <a href="https://nbviewer.org/github/pgx-ml-lab/2025-STAGE-workshop-TWAS/tree/main/notebooks/" target="_blank">here</a>.

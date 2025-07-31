@@ -75,3 +75,7 @@ L'environnement informatique contient :
   - <a href="https://www.nature.com/articles/s41588-022-01058-3" target="_blank">Données d'ascendance européenne</a>
   - Transférées de GRCh37 vers GRCh38
   - Harmonisées avec les variants des modèles TWAS
+
+### Accéder aux cahiers sans Docker
+
+Une version non-interactive de l'aterlier est disponible <a href="https://nbviewer.org/github/pgx-ml-lab/2025-STAGE-workshop-TWAS/tree/main/notebooks/" target="_blank">ici</a>.
